@@ -34,14 +34,15 @@ const button = cva(
   }
 )
 
-export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>, VariantProps<typeof button> {
+export interface LinkButtonProps extends React.ButtonHTMLAttributes<HTMLAnchorElement>, VariantProps<typeof button> {
   underline?: boolean
+  href: string
 }
 
-export function Button({ className, intent, size, underline, ...props }: ButtonProps) {
+export function LinkButton({ className, intent, size, underline, ...props }: LinkButtonProps) {
   return (
-    <button className={twMerge(button({ intent, size, className, underline }))} {...props}>
+    <a className={twMerge(button({ intent, size, className, underline }))} {...props}>
       {props.children}
-    </button>
+    </a>
   )
 }

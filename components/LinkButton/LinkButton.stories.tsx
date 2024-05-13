@@ -1,13 +1,13 @@
 import type { Meta, StoryObj } from "@storybook/react"
-import { Button } from "./Button"
+import { LinkButton } from "./LinkButton"
 
-const meta: Meta<typeof Button> = {
+const meta: Meta<typeof LinkButton> = {
   title: "Link Button",
-  component: Button,
+  component: LinkButton,
   args: {
     intent: "primary",
     underline: false,
-    children: "Button",
+    children: "LinkButton",
     size: "lg",
   },
   argTypes: {
@@ -22,10 +22,10 @@ const meta: Meta<typeof Button> = {
   },
 }
 
-type Story = StoryObj<typeof Button>
+type Story = StoryObj<typeof LinkButton>
 
 export const Default: Story = {
-  render: (args) => <Button {...args} />,
+  render: (args) => <LinkButton {...args} />,
 }
 
 export default meta
