@@ -1,4 +1,10 @@
-export const NAV_ITEMS = ["Services", "About", "Contact"]
+import { routes } from "app/lib/routes"
+
+export const NAV_ITEMS = [
+  { title: "Services", href: routes.SERVICES },
+  { title: "About", href: routes.ABOUT },
+  { title: "Contact", href: routes.CONTACT }
+]
 
 export const SOCIAL_ICONS = [
   { src: "https://cdn.builder.io/api/v1/image/assets/TEMP/d6dc0d5d3e778f5ac40749f698a950f9c800d279aa8e0e3be6417392edb64b83?apiKey=22246eee373843b9ad31feedbfd0d7ad&", alt: "Social icon 1" },
