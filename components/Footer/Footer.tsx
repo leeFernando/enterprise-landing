@@ -4,8 +4,8 @@ import { SocialIcon } from "components/SocialIcon/SocialIcon"
 
 export function Footer() {
   return (
-    <footer className="flex items-center px-44 py-8 bg-gray-100 max-md:px-5">
-      <nav className="flex gap-1.5 pr-20 max-md:flex-wrap max-md:pr-5">
+    <footer className="flex items-center px-44 py-8 bg-gray-100 max-lg:px-5 max-lg:justify-center">
+      <nav className="flex gap-1.5 max-md:flex-wrap">
         {SOCIAL_ICONS.map((icon, index) => (
           <SocialIcon key={index} src={icon.src} alt={icon.alt} />
         ))}
